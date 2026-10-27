@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@primer/octicons-react": "^19.42.0",
     "@primer/primitives": "^11.10.0",
     "@primer/react": "^38.41.0",
     "next": "16.4.1",
