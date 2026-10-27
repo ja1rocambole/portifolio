@@ -1,55 +1,89 @@
 export const profile = {
-  name: "Seu Nome",
+  name: "João Fernandes",
   role: "Desenvolvedor Full Stack",
-  github: "https://github.com/seu-usuario",
-  linkedin: "https://www.linkedin.com/in/seu-usuario",
+  github: "https://github.com/ja1rocambole",
+  linkedin: "https://www.linkedin.com/in/joao-fernandes-da-silva-neto/",
   summary:
-    "Escreva aqui um breve resumo sobre você, sua trajetória e o que você busca profissionalmente.",
+    "Construindo aplicações web e desktop de alto desempenho no ecossistema JS, potencializado por engenharia com Inteligência Artificial.",
 };
 
 export const skills = [
-  "TypeScript",
+  // Core Full Stack (JS / TS)
   "JavaScript",
+  "TypeScript",
   "React",
   "Next.js",
   "Node.js",
-  "Git",
+  "Express",
+  "Vue.js",
+  "Tailwind CSS",
+  "Styled Components",
+  "HTML / CSS",
+
+  // Qualidade, Testes & DevOps
+  "TDD (Jest)",
+  "Docker & Docker Compose",
+  "CI/CD (GitHub Actions)",
+  "Vercel",
+  "Git & GitHub",
+  "Clean Code & Arquitetura MVC",
+
+  // Desenvolvimento Assistido por IA (Diferencial)
+  "GitHub Copilot & IA Assistants",
+  "Engenharia de Prompts para Devs",
+  "Refatoração & Testes com IA",
+
+  // Bancos de Dados & APIs
+  "PostgreSQL",
+  "SQLite",
+  "MySQL",
+  "APIs RESTful",
+
+  // Ferramentas & Metodologias
+  "VS Code",
+  "Postman / Insomnia",
+  "Terminal Linux",
+  "Scrum & Kanban",
 ];
 
 export const experiences = [
   {
-    company: "Empresa Exemplo",
-    role: "Desenvolvedor Júnior",
-    period: "2024 - Atual",
-    description: "Descreva suas principais responsabilidades e conquistas.",
-  },
-  {
-    company: "Outra Empresa",
-    role: "Estagiário",
-    period: "2023 - 2024",
-    description: "Descreva suas principais responsabilidades e conquistas.",
+    company: "CS-Consoft",
+    role: "Desenvolvedor Frontend",
+    period: "Set/2025 - Dez/2025",
+    description:
+      "Atuação na modernização de sistemas legados com Vue.js, integração de interfaces com APIs RESTful e identificação de requisitos de negócio para otimização de fluxos e contratos de API.",
   },
 ];
 
 export const projects = [
   {
-    slug: "projeto-um",
-    image: "/projetos/projeto-um.svg",
-    title: "Projeto Um",
-    description: "Resumo curto do primeiro projeto.",
+    slug: "pdv-oficina",
+    image: "/projetos/pdv-oficina.svg",
+    title: "PDV-Oficina",
+    description:
+      "Sistema desktop completo para gestão operacional e fluxo de caixa de oficina mecânica.",
     details:
-      "Descrição completa do projeto: problema resolvido, decisões técnicas e resultados.",
-    tags: ["Next.js", "TypeScript"],
-    repo: "https://github.com/",
+      "Aplicação criada para centralizar a operação de uma oficina, cobrindo cadastro de clientes, veículos, equipe, ordens de serviço, controle de estoque e vendas. A interface em React conversa com a camada do Electron via comunicação IPC assíncrona, e todos os dados são persistidos localmente com SQLite via better-sqlite3, garantindo alta performance offline e segurança dos dados do estabelecimento.",
+    tags: [
+      "Electron",
+      "React",
+      "SQLite",
+      "Node.js",
+      "TypeScript",
+      "Ant Design",
+    ],
+    repo: "https://github.com/joaofernandes/pdv-oficina",
   },
   {
-    slug: "projeto-dois",
-    image: "/projetos/projeto-dois.svg",
-    title: "Projeto Dois",
-    description: "Resumo curto do segundo projeto.",
+    slug: "clone-tabnews",
+    image: "/projetos/clone-tabnews.svg",
+    title: "Clone do TabNews",
+    description:
+      "Plataforma web colaborativa end-to-end com foco em engenharia de software e qualidade.",
     details:
-      "Descrição completa do projeto: problema resolvido, decisões técnicas e resultados.",
-    tags: ["React", "Node.js"],
-    repo: "https://github.com/",
+      "Projeto desenvolvido durante o Curso.dev para aplicar conceitos avançados de desenvolvimento full-stack. Conta com autenticação/autorização, sistema de publicação e respostas, segurança de senhas e banco de dados PostgreSQL com migrations automatizadas. A aplicação foi construída com práticas rigorosas de TDD (Jest), conteinerização completa em ambiente Docker e esteira de CI/CD via GitHub Actions com deploy automatizado na Vercel.",
+    tags: ["Next.js", "Node.js", "PostgreSQL", "Docker", "Jest", "CI/CD"],
+    repo: "https://github.com/joaofernandes/clone-tabnews",
   },
 ];

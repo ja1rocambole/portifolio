@@ -70,7 +70,7 @@ export default function DefaultLayout({
                   <MarkGithubIcon size={20} />
                 </Header.Link>
               </Header.Item>
-              <Header.Item sx={{ mr: 0 }}>
+              <Header.Item style={{ marginRight: 0 }}>
                 <Header.Link
                   href={profile.linkedin}
                   target="_blank"
@@ -90,7 +90,8 @@ export default function DefaultLayout({
 
         <PageLayout.Footer divider="line">
           <Text size="small" style={{ color: "var(--fgColor-muted)" }}>
-            © {new Date().getFullYear()} Seu Nome. Todos os direitos reservados.
+            © {new Date().getFullYear()} João Fernandes. Todos os direitos
+            reservados.
           </Text>
         </PageLayout.Footer>
       </PageLayout>
