@@ -2,7 +2,7 @@ import { MarkGithubIcon } from "@primer/octicons-react";
 import { Header, PageLayout, Text } from "@primer/react";
 import { profile } from "@/data/portfolio";
 import Link from "next/link";
-import React from "react";
+import React, { startTransition, useEffect, useState } from "react";
 
 // O Octicons não possui ícone do LinkedIn
 function LinkedinIcon() {
@@ -90,11 +90,22 @@ export default function DefaultLayout({
 
         <PageLayout.Footer divider="line">
           <Text size="small" style={{ color: "var(--fgColor-muted)" }}>
-            © {new Date().getFullYear()} João Fernandes. Todos os direitos
-            reservados.
+            © <CurrentYear /> João Fernandes. Todos os direitos reservados.
           </Text>
         </PageLayout.Footer>
       </PageLayout>
     </>
   );
+}
+
+function CurrentYear() {
+  const [year, setYear] = useState<number | null>(null);
+
+  useEffect(() => {
+    startTransition(() => {
+      setYear(new Date().getFullYear());
+    });
+  }, []);
+
+  return <span>{year ?? ""}</span>;
 }
