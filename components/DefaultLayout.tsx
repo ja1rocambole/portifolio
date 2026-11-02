@@ -1,3 +1,5 @@
+"use client";
+
 import { MarkGithubIcon } from "@primer/octicons-react";
 import { Header, PageLayout, Text } from "@primer/react";
 import { profile } from "@/data/portfolio";
